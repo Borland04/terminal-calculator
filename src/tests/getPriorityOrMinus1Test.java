@@ -17,8 +17,8 @@ public class getPriorityOrMinus1Test {
 
         assertEquals(new Integer(3), Main.getPriorityOrMinus1("^"));
 
-        assertEquals(new Integer(10), Main.getPriorityOrMinus1("("));
-        assertEquals(new Integer(10), Main.getPriorityOrMinus1(")"));
+        assertEquals(new Integer(0), Main.getPriorityOrMinus1("("));
+        assertEquals(new Integer(0), Main.getPriorityOrMinus1(")"));
     }
     
 }
