@@ -103,4 +103,9 @@ public class nextAtomTest {
         assertEquals("2", Main.nextAtom("2+2 * 2",5));
         assertEquals("", Main.nextAtom("2+2 * 2",10));
     }
+
+    @Test
+    public void nextAtom_FewOperatorsTogether_ReturnsOperator() {
+        assertEquals(")", Main.nextAtom(")^",0));
+    }
 }

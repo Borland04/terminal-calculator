@@ -5,7 +5,6 @@
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change beforePath="$PROJECT_DIR$/src/main/Main.java" afterPath="$PROJECT_DIR$/src/main/Main.java" />
       <change beforePath="$PROJECT_DIR$/src/tests/calculateTest.java" afterPath="$PROJECT_DIR$/src/tests/calculateTest.java" />
-      <change beforePath="$PROJECT_DIR$/src/tests/getPriorityOrMinus1Test.java" afterPath="$PROJECT_DIR$/src/tests/getPriorityOrMinus1Test.java" />
       <change beforePath="$PROJECT_DIR$/src/tests/nextAtomTest.java" afterPath="$PROJECT_DIR$/src/tests/nextAtomTest.java" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
@@ -419,7 +418,14 @@
       <option name="project" value="LOCAL" />
       <updated>1518102187591</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="Changed tests for 'getPriority...' cause changed priority of brackets from 10 to 0.">
+      <created>1518102282736</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1518102282736</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -494,7 +500,8 @@
     <MESSAGE value="Added support of negative numbers. Added tests of parsing negative numbers." />
     <MESSAGE value="Added tests for 'calculate' method." />
     <MESSAGE value="Added tests for 'handleOperator' method." />
-    <option name="LAST_COMMIT_MESSAGE" value="Added tests for 'handleOperator' method." />
+    <MESSAGE value="Changed tests for 'getPriority...' cause changed priority of brackets from 10 to 0." />
+    <option name="LAST_COMMIT_MESSAGE" value="Changed tests for 'getPriority...' cause changed priority of brackets from 10 to 0." />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
