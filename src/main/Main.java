@@ -7,14 +7,17 @@ import java.io.Reader;
 import java.math.BigDecimal;
 import java.util.HashMap;
 import java.util.Map;
+import java.util.Stack;
+import java.util.function.BinaryOperator;
 
 
 public class Main {
 
     private static Map<String, Integer> priorityMap;
+    private static Map<String, BinaryOperator<BigDecimal>> expressionMap;
 
     static {
-        priorityMap = new HashMap<>(6);
+        priorityMap = new HashMap<>(7);
         priorityMap.put("+", 1);
         priorityMap.put("-", 1);
         priorityMap.put("*", 2);
@@ -22,6 +25,18 @@ public class Main {
         priorityMap.put("^", 3);
         priorityMap.put("(", 10);
         priorityMap.put(")", 10);
+        
+        expressionMap = new HashMap<>(5);
+        expressionMap.put("+", BigDecimal::add);
+        expressionMap.put("-", BigDecimal::subtract);
+        expressionMap.put("*", BigDecimal::multiply);
+        expressionMap.put("/", (a, b) -> {
+            if(b.intValue() == 0) {
+                throw new InvalidDataException("Divide by zero");
+            }
+            return a.divide(b);
+        });
+        expressionMap.put("^", (a, b) -> a.pow(b.intValueExact()));
     }
 
 
@@ -31,8 +46,12 @@ public class Main {
             try (BufferedReader input = new BufferedReader(r)) {
                 String expression = input.readLine();
                 expression = expression.replace(',', '.');
+                BigDecimal result = calculate(expression);
+                System.out.println("result: " + result.toString());
 
             } catch (IOException e) {
+                e.printStackTrace();
+            } catch (ArithmeticException e) {
                 e.printStackTrace();
             } catch (InvalidDataException e) {
                 e.printStackTrace();
@@ -43,7 +62,12 @@ public class Main {
     }
 
     public static BigDecimal calculate(String expression) {
+        Stack<BigDecimal> operands = new Stack<>();
+        Stack<String> operators = new Stack<>();
 
+
+
+        return new BigDecimal(0);
     }
 
     public static String nextAtom(String str, int startIndex) {
@@ -76,6 +100,22 @@ public class Main {
         }
     }
 
+    public static BigDecimal calculateExpression(String operator, Stack<BigDecimal> stack) {
+        if(stack.size() < 2) {
+            throw new InvalidDataException("Not enough operands for " + operator + " operator");
+        }
+
+        BigDecimal a = stack.pop();
+        BigDecimal b = stack.pop();
+
+        BinaryOperator op = expressionMap.getOrDefault(operator,
+                (bd1, bd2) -> {
+            throw new InvalidDataException("Unknown operator " + operator);
+        });
+
+        return (BigDecimal) op.apply(b, a);
+    }
+
     public static boolean isOperator(String str) {
         for (String op : priorityMap.keySet()) {
             if (op.equals(str)) {
@@ -84,6 +124,10 @@ public class Main {
         }
 
         return false;
+    }
+
+    public static Integer getPriorityOrMinus1(String operator) {
+        return priorityMap.getOrDefault(operator, -1);
     }
 
 }
