@@ -32,6 +32,13 @@ public class nextAtomTest {
     }
 
     @Test
+    public void nextAtom_NegativeNumber_ReturnsNumber() {
+        assertEquals("-1234", Main.nextAtom("-1234",0));
+        assertEquals("-0.56", Main.nextAtom("-0.56",0));
+    }
+
+
+    @Test
     public void nextAtom_Operator_ReturnsOperator() {
         assertEquals("+", Main.nextAtom("+",0));
         assertEquals("-", Main.nextAtom("-",0));
@@ -44,6 +51,8 @@ public class nextAtomTest {
         assertEquals("(", Main.nextAtom("(",0));
         assertEquals(")", Main.nextAtom(")",0));
     }
+
+
 
     @Test
     public void nextAtom_Unknown_ReturnsUnknown() {

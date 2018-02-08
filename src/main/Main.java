@@ -67,6 +67,7 @@ public class Main {
 
 
 
+
         return new BigDecimal(0);
     }
 
@@ -80,8 +81,9 @@ public class Main {
             return "";
         }
 
-        // If next atom is number (1 or 0.324)
-        if(Character.isDigit(str.charAt(0))) {
+        // If next atom is number (1, -2 or 0.324)
+        boolean isNegativeNumber = str.length() > 1 && str.charAt(0) == '-' && Character.isDigit(str.charAt(1));
+        if(isNegativeNumber || Character.isDigit(str.charAt(0))) {
             int length = 1;
             while(length < str.length() &&
                     (Character.isDigit(str.charAt(length)) || str.charAt(length) == '.')) {

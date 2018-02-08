@@ -2,8 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="1a407a2d-887a-4063-bd25-75d4ec6c7006" name="Default" comment="">
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/tests/getPriorityOrMinus1Test.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/tests/isOperatorTest.java" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change beforePath="$PROJECT_DIR$/src/main/Main.java" afterPath="$PROJECT_DIR$/src/main/Main.java" />
       <change beforePath="$PROJECT_DIR$/src/tests/nextAtomTest.java" afterPath="$PROJECT_DIR$/src/tests/nextAtomTest.java" />
@@ -379,7 +377,14 @@
       <option name="project" value="LOCAL" />
       <updated>1518096900384</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="Added tests for methods 'isOperator' and 'getPriorityOrMinus1'.">
+      <created>1518098132789</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1518098132789</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -450,7 +455,8 @@
     <MESSAGE value="Added tests for method 'nextAtom'." />
     <MESSAGE value="Added map 'operator -&gt; action'.&#10;Added method 'calculate expression'. It takes operator and stack with operands and returns result of expression." />
     <MESSAGE value="Added tests for method 'calculateExpression'." />
-    <option name="LAST_COMMIT_MESSAGE" value="Added tests for method 'calculateExpression'." />
+    <MESSAGE value="Added tests for methods 'isOperator' and 'getPriorityOrMinus1'." />
+    <option name="LAST_COMMIT_MESSAGE" value="Added tests for methods 'isOperator' and 'getPriorityOrMinus1'." />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
