@@ -1,9 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="1a407a2d-887a-4063-bd25-75d4ec6c7006" name="Default" comment="Added map 'operator -&gt; action'.&#10;Added method 'calculate expression'. It takes operator and stack with operands and returns result of expression.">
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/tests/calculateExpressionTest.java" />
+    <list default="true" id="1a407a2d-887a-4063-bd25-75d4ec6c7006" name="Default" comment="">
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/tests/getPriorityOrMinus1Test.java" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/tests/isOperatorTest.java" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change beforePath="$PROJECT_DIR$/src/main/Main.java" afterPath="$PROJECT_DIR$/src/main/Main.java" />
+      <change beforePath="$PROJECT_DIR$/src/tests/nextAtomTest.java" afterPath="$PROJECT_DIR$/src/tests/nextAtomTest.java" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -18,12 +21,12 @@
       <file leaf-file-name="Main.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/Main.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="234">
-              <caret line="66" column="0" lean-forward="false" selection-start-line="66" selection-start-column="0" selection-end-line="66" selection-end-column="0" />
+            <state relative-caret-position="343">
+              <caret line="120" column="36" lean-forward="false" selection-start-line="120" selection-start-column="26" selection-end-line="120" selection-end-column="36" />
               <folding>
                 <element signature="method#nextAtom#0;class#Main#0" expanded="false" />
-                <element signature="e#3979#3980#0" expanded="true" />
-                <element signature="e#4040#4041#0" expanded="true" />
+                <element signature="e#4117#4118#0" expanded="true" />
+                <element signature="e#4178#4179#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -44,9 +47,13 @@
       <find>prio</find>
       <find>priority</find>
       <find>add</find>
+      <find>True</find>
+      <find>isOperator</find>
     </findStrings>
     <replaceStrings>
       <replace>expression</replace>
+      <replace>Equals</replace>
+      <replace>getPriorityOrMinus1</replace>
     </replaceStrings>
   </component>
   <component name="Git.Settings">
@@ -63,10 +70,12 @@
         <option value="$PROJECT_DIR$/src/InvalidDataException.java" />
         <option value="$PROJECT_DIR$/src/tests/nextAtomTests.java" />
         <option value="$PROJECT_DIR$/src/Main.java" />
-        <option value="$PROJECT_DIR$/src/tests/nextAtomTest.java" />
         <option value="$PROJECT_DIR$/src/main/InvalidDataException.java" />
         <option value="$PROJECT_DIR$/src/tests/calculateExpressionTest.java" />
+        <option value="$PROJECT_DIR$/src/tests/isOperatorTest.java" />
+        <option value="$PROJECT_DIR$/src/tests/getPriorityOrMinus1Test.java" />
         <option value="$PROJECT_DIR$/src/main/Main.java" />
+        <option value="$PROJECT_DIR$/src/tests/nextAtomTest.java" />
       </list>
     </option>
   </component>
@@ -151,23 +160,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.calculateExpressionTest">
-    <configuration name="Main" type="Application" factoryName="Application" temporary="true">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
-      <option name="MAIN_CLASS_NAME" value="main.Main" />
-      <option name="VM_PARAMETERS" value="" />
-      <option name="PROGRAM_PARAMETERS" value="" />
-      <option name="WORKING_DIRECTORY" value="file://$PROJECT_DIR$" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" value="" />
-      <option name="ENABLE_SWING_INSPECTOR" value="false" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <module name="terminal-calculator" />
-      <envs />
-      <RunnerSettings RunnerId="Run" />
-      <ConfigurationWrapper RunnerId="Run" />
-    </configuration>
+  <component name="RunManager" selected="JUnit.nextAtomTest">
     <configuration name="calculateExpressionTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
         <pattern>
@@ -207,6 +200,31 @@
       <option name="MAIN_CLASS_NAME" value="tests.calculateExpressionTest" />
       <option name="METHOD_NAME" value="calculateExpression_OperatorPlusAndValidArgs_ReturnsResult" />
       <option name="TEST_OBJECT" value="method" />
+      <option name="VM_PARAMETERS" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <envs />
+      <patterns />
+    </configuration>
+    <configuration name="isOperatorTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
+        <pattern>
+          <option name="PATTERN" value="tests.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <module name="terminal-calculator" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="tests" />
+      <option name="MAIN_CLASS_NAME" value="tests.isOperatorTest" />
+      <option name="METHOD_NAME" />
+      <option name="TEST_OBJECT" value="class" />
       <option name="VM_PARAMETERS" />
       <option name="PARAMETERS" />
       <option name="WORKING_DIRECTORY" />
@@ -284,18 +302,19 @@
       <method />
     </configuration>
     <list size="5">
-      <item index="0" class="java.lang.String" itemvalue="Application.Main" />
-      <item index="1" class="java.lang.String" itemvalue="JUnit.nextAtomTest" />
-      <item index="2" class="java.lang.String" itemvalue="JUnit.nextAtomTest.nextAtom_Expression_ParseAsExpected" />
-      <item index="3" class="java.lang.String" itemvalue="JUnit.calculateExpressionTest.calculateExpression_OperatorPlusAndValidArgs_ReturnsResult" />
-      <item index="4" class="java.lang.String" itemvalue="JUnit.calculateExpressionTest" />
+      <item index="0" class="java.lang.String" itemvalue="JUnit.nextAtomTest" />
+      <item index="1" class="java.lang.String" itemvalue="JUnit.nextAtomTest.nextAtom_Expression_ParseAsExpected" />
+      <item index="2" class="java.lang.String" itemvalue="JUnit.calculateExpressionTest.calculateExpression_OperatorPlusAndValidArgs_ReturnsResult" />
+      <item index="3" class="java.lang.String" itemvalue="JUnit.calculateExpressionTest" />
+      <item index="4" class="java.lang.String" itemvalue="JUnit.isOperatorTest" />
     </list>
     <recent_temporary>
-      <list size="4">
-        <item index="0" class="java.lang.String" itemvalue="JUnit.calculateExpressionTest" />
-        <item index="1" class="java.lang.String" itemvalue="JUnit.calculateExpressionTest.calculateExpression_OperatorPlusAndValidArgs_ReturnsResult" />
-        <item index="2" class="java.lang.String" itemvalue="JUnit.nextAtomTest.nextAtom_Expression_ParseAsExpected" />
-        <item index="3" class="java.lang.String" itemvalue="JUnit.nextAtomTest" />
+      <list size="5">
+        <item index="0" class="java.lang.String" itemvalue="JUnit.nextAtomTest" />
+        <item index="1" class="java.lang.String" itemvalue="JUnit.isOperatorTest" />
+        <item index="2" class="java.lang.String" itemvalue="JUnit.calculateExpressionTest" />
+        <item index="3" class="java.lang.String" itemvalue="JUnit.calculateExpressionTest.calculateExpression_OperatorPlusAndValidArgs_ReturnsResult" />
+        <item index="4" class="java.lang.String" itemvalue="JUnit.nextAtomTest.nextAtom_Expression_ParseAsExpected" />
       </list>
     </recent_temporary>
   </component>
@@ -353,7 +372,14 @@
       <option name="project" value="LOCAL" />
       <updated>1518096874197</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="Added tests for method 'calculateExpression'.">
+      <created>1518096900384</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1518096900384</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -372,10 +398,16 @@
     <history-entry file="calculateExpressionTest_calculateExpression_OperatorPlusAndValidArgs_ReturnsResult - 2018.02.08 at 13h 12m 14s.xml">
       <configuration name="calculateExpressionTest.calculateExpression_OperatorPlusAndValidArgs_ReturnsResult" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="nextAtomTest - 2018.02.08 at 11h 46m 00s.xml">
-      <configuration name="nextAtomTest" configurationId="JUnit" />
+    <history-entry file="isOperatorTest - 2018.02.08 at 13h 40m 58s.xml">
+      <configuration name="isOperatorTest" configurationId="JUnit" />
     </history-entry>
     <history-entry file="nextAtomTest - 2018.02.08 at 11h 46m 41s.xml">
+      <configuration name="nextAtomTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="nextAtomTest - 2018.02.08 at 13h 52m 16s.xml">
+      <configuration name="nextAtomTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="nextAtomTest - 2018.02.08 at 13h 53m 51s.xml">
       <configuration name="nextAtomTest" configurationId="JUnit" />
     </history-entry>
     <history-entry file="nextAtomTest_nextAtom_Expression_ParseAsExpected - 2018.02.08 at 11h 48m 36s.xml">
@@ -395,7 +427,7 @@
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32963988" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24963397" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24963397" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -417,10 +449,13 @@
     <MESSAGE value="Moved classes to package 'main'." />
     <MESSAGE value="Added tests for method 'nextAtom'." />
     <MESSAGE value="Added map 'operator -&gt; action'.&#10;Added method 'calculate expression'. It takes operator and stack with operands and returns result of expression." />
-    <option name="LAST_COMMIT_MESSAGE" value="Added map 'operator -&gt; action'.&#10;Added method 'calculate expression'. It takes operator and stack with operands and returns result of expression." />
+    <MESSAGE value="Added tests for method 'calculateExpression'." />
+    <option name="LAST_COMMIT_MESSAGE" value="Added tests for method 'calculateExpression'." />
   </component>
   <component name="XDebuggerManager">
-    <breakpoint-manager />
+    <breakpoint-manager>
+      <option name="time" value="2" />
+    </breakpoint-manager>
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
@@ -437,40 +472,6 @@
         <state relative-caret-position="0">
           <caret line="0" column="17" lean-forward="false" selection-start-line="0" selection-start-column="17" selection-end-line="0" selection-end-column="17" />
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/tests/nextAtomTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="577">
-          <caret line="94" column="22" lean-forward="true" selection-start-line="94" selection-start-column="22" selection-end-line="94" selection-end-column="22" />
-          <folding>
-            <element signature="imports" expanded="false" />
-            <element signature="e#200#201#0" expanded="false" />
-            <element signature="e#253#254#0" expanded="false" />
-            <element signature="e#324#325#0" expanded="false" />
-            <element signature="e#381#382#0" expanded="false" />
-            <element signature="e#444#445#0" expanded="false" />
-            <element signature="e#505#506#0" expanded="false" />
-            <element signature="e#580#581#0" expanded="false" />
-            <element signature="e#646#647#0" expanded="false" />
-            <element signature="e#705#706#0" expanded="false" />
-            <element signature="e#770#771#0" expanded="false" />
-            <element signature="e#1250#1251#0" expanded="false" />
-            <element signature="e#1315#1316#0" expanded="false" />
-            <element signature="e#1536#1537#0" expanded="false" />
-            <element signature="e#1600#1601#0" expanded="false" />
-            <element signature="e#1680#1681#0" expanded="false" />
-            <element signature="e#1738#1739#0" expanded="false" />
-            <element signature="e#1807#1808#0" expanded="false" />
-            <element signature="e#1873#1874#0" expanded="false" />
-            <element signature="e#1944#1945#0" expanded="false" />
-            <element signature="e#2005#2006#0" expanded="false" />
-            <element signature="e#2073#2074#0" expanded="false" />
-            <element signature="e#2142#2143#0" expanded="false" />
-            <element signature="e#2211#2212#0" expanded="false" />
-            <element signature="e#2278#2279#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -494,14 +495,49 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/tests/isOperatorTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="216">
+          <caret line="12" column="8" lean-forward="true" selection-start-line="12" selection-start-column="8" selection-end-line="21" selection-end-column="41" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#603#604#0" expanded="true" />
+            <element signature="e#652#653#0" expanded="true" />
+            <element signature="e#722#723#0" expanded="true" />
+            <element signature="e#772#773#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/tests/getPriorityOrMinus1Test.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="252">
+          <caret line="14" column="34" lean-forward="false" selection-start-line="14" selection-start-column="34" selection-end-line="14" selection-end-column="34" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/tests/nextAtomTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="577">
+          <caret line="103" column="54" lean-forward="false" selection-start-line="103" selection-start-column="54" selection-end-line="103" selection-end-column="54" />
+          <folding>
+            <element signature="e#444#445#0" expanded="true" />
+            <element signature="e#505#506#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/Main.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="234">
-          <caret line="66" column="0" lean-forward="false" selection-start-line="66" selection-start-column="0" selection-end-line="66" selection-end-column="0" />
+        <state relative-caret-position="343">
+          <caret line="120" column="36" lean-forward="false" selection-start-line="120" selection-start-column="26" selection-end-line="120" selection-end-column="36" />
           <folding>
             <element signature="method#nextAtom#0;class#Main#0" expanded="false" />
-            <element signature="e#3979#3980#0" expanded="true" />
-            <element signature="e#4040#4041#0" expanded="true" />
+            <element signature="e#4117#4118#0" expanded="true" />
+            <element signature="e#4178#4179#0" expanded="true" />
           </folding>
         </state>
       </provider>
