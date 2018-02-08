@@ -5,7 +5,6 @@
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change beforePath="$PROJECT_DIR$/src/main/Main.java" afterPath="$PROJECT_DIR$/src/main/Main.java" />
       <change beforePath="$PROJECT_DIR$/src/tests/calculateTest.java" afterPath="$PROJECT_DIR$/src/tests/calculateTest.java" />
-      <change beforePath="$PROJECT_DIR$/src/tests/nextAtomTest.java" afterPath="$PROJECT_DIR$/src/tests/nextAtomTest.java" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -425,7 +424,14 @@
       <option name="project" value="LOCAL" />
       <updated>1518102282736</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="Added test for nextAtom. &#10;Tests situation, when 2 valid operators are together without ' ' between.">
+      <created>1518102356408</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1518102356408</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -501,7 +507,8 @@
     <MESSAGE value="Added tests for 'calculate' method." />
     <MESSAGE value="Added tests for 'handleOperator' method." />
     <MESSAGE value="Changed tests for 'getPriority...' cause changed priority of brackets from 10 to 0." />
-    <option name="LAST_COMMIT_MESSAGE" value="Changed tests for 'getPriority...' cause changed priority of brackets from 10 to 0." />
+    <MESSAGE value="Added test for nextAtom. &#10;Tests situation, when 2 valid operators are together without ' ' between." />
+    <option name="LAST_COMMIT_MESSAGE" value="Added test for nextAtom. &#10;Tests situation, when 2 valid operators are together without ' ' between." />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

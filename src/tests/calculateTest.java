@@ -18,7 +18,7 @@ public class calculateTest {
         assertEquals(1.75, Main.calculate("(4 + 3) * 2 ^ -2").doubleValue(), 0.001);
     }
 
-    @Test(expected = ArithmeticException.class)
+    @Test(expected = InvalidDataException.class)
     public void Expression3() {
         Main.calculate("5 + 1/0");
     }
@@ -33,7 +33,7 @@ public class calculateTest {
         Main.calculate("4 2 * 3");
     }
 
-    @Test(expected = InvalidDataException.class)
+    @Test(expected = NumberFormatException.class)
     public void Expression6() {
         Main.calculate("4a * 5");
     }
